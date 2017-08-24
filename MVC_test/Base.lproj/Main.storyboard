@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nd-Y8-Zla">
+                                <rect key="frame" x="87.5" y="80" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="L14-WR-KSc"/>
+                                    <constraint firstAttribute="width" constant="200" id="P12-RZ-vLl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flat,1000x1000,075,f.u2" translatesAutoresizingMaskIntoConstraints="NO" id="Wa7-Qh-yZO" customClass="RoundedImageView" customModule="MVC_test" customModuleProvider="target">
+                                <rect key="frame" x="67.5" y="203.5" width="240" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="jnN-RT-y5C"/>
+                                    <constraint firstAttribute="height" constant="260" id="ubw-Nt-9b1"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a new first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BLQ-9V-o9a">
+                                <rect key="frame" x="68" y="128" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SG0-HS-uoA"/>
+                                    <constraint firstAttribute="width" constant="240" id="YfH-is-Kvh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFt-JS-nGZ">
+                                <rect key="frame" x="157.5" y="533" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vim-P7-OkI"/>
+                                    <constraint firstAttribute="width" constant="60" id="jHH-u0-bE2"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="renamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geA-Ba-cz7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wa7-Qh-yZO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6A2-U2-dGC"/>
+                            <constraint firstItem="7nd-Y8-Zla" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C1K-Nb-AWM"/>
+                            <constraint firstItem="UFt-JS-nGZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C9T-DO-dso"/>
+                            <constraint firstItem="Wa7-Qh-yZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EkN-cV-owF"/>
+                            <constraint firstItem="UFt-JS-nGZ" firstAttribute="top" secondItem="Wa7-Qh-yZO" secondAttribute="bottom" constant="70" id="H1F-gz-UNP"/>
+                            <constraint firstItem="BLQ-9V-o9a" firstAttribute="top" secondItem="7nd-Y8-Zla" secondAttribute="bottom" constant="8" id="aBX-qW-akX"/>
+                            <constraint firstItem="7nd-Y8-Zla" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="cZx-xp-q6a"/>
+                            <constraint firstItem="BLQ-9V-o9a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrs-WA-Tva"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="7nd-Y8-Zla" id="p3q-mN-iPi"/>
+                        <outlet property="renameField" destination="BLQ-9V-o9a" id="j67-AO-bDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="170.46476761619192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flat,1000x1000,075,f.u2" width="750" height="1000"/>
+    </resources>
+</document>
